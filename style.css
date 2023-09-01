@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+
+}
+
+header .top {
+    background-color: #000;
+    position: sticky;
+
+    z-index: 30000;
+}
+
+header .top h5 {
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .top h5 span {
+    color: red;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+header .navbar {
+    z-index: 10000;
+    background-color: white;
+}
+
+header .navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .navbar .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 320px;
+}
+
+header .navbar .nav-top .logo img {
+    width: 148px;
+    height: 53px;
+}
+
+header .navbar .nav-top .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .navbar .nav-top .icons .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .navbar .nav-top .icons .search i {
+    font-size: 22px;
+}
+
+header .navbar .nav-top .icons .search .title {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+header .navbar .nav-bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 13px 0;
+}
+
+header .navbar .nav-bottom a {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2.2px;
+    padding: 0 39px;
+    transition: 0.3s ease;
+}
+
+header .navbar .nav-bottom a:hover {
+    color: #ccc;
+}
+
+/* header end */
+/* indirim section start */
+
+.indirim {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    margin-top: 20px;
+
+}
+
+.indirim-cont {
+    background-color: black;
+    padding: 20px 25px;
+
+}
+
+.indirim-container {
+
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 370px;
+    border: 2px solid white;
+
+}
+
+.indirim-container h4 {
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.indirim-container h1 {
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.indirim-container h6 {
+    font-size: 130px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.card-container {
+    width: 100%;
+
+    padding: 0 350px;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+    gap: 1rem;
+}
+
+.row .card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.row .card .card-content {
+    width: 320px;
+}
+
+.row .card .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    color: #ffffff;
+    gap: 0.5rem;
+    text-align: start;
+    font-size: 11.2px;
+}
+
+.row .card .time .line {
+    height: 17px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, .27)
+}
+
+.row .card .image {
+    width: 330px;
+    height: 480px;
+    margin-bottom: 20px;
+    position: relative;
+    background: url(./img/abi2.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .7s ease;
+}
+
+.row .card .image:hover {
+    background: url(./img/abi1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card .image img {
+    width: 100%;
+}
+
+.image-indirim {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 4.5px 6px;
+}
+
+.card-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card-bottom .info {
+    font-size: 13px;
+    color: #030303;
+}
+
+.card-bottom .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-bottom .price p {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.card-bottom .price span {
+    font-size: 11.2px;
+    color: #000000;
+    text-decoration: line-through;
+    opacity: .8;
+}
+
+/* imgler */
+
+/* card2 */
+.row .card:nth-child(2) .image {
+    background: url(./img/abi1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(2) .image:hover {
+    background: url(./img/abi2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 3 */
+.row .card:nth-child(3) .image {
+    background: url(./img/abi3-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(3) .image:hover {
+    background: url(./img/abi3-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 4 */
+.row .card:nth-child(4) .image {
+    background: url(./img/abi4-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(4) .image:hover {
+    background: url(./img/abi4-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 5 */
+.row .card:nth-child(5) .image {
+    background: url(./img/gacı1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(5) .image:hover {
+    background: url(./img/gacı1-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 6 */
+.row .card:nth-child(6) .image {
+    background: url(./img/gacı2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(6) .image:hover {
+    background: url(./img/gacı2-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 7 */
+.row .card:nth-child(7) .image {
+    background: url(./img/gacı3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(7) .image:hover {
+    background: url(./img/gacı3-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 8 */
+.row .card:nth-child(8) .image {
+    background: url(./img/gacı4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(8) .image:hover {
+    background: url(./img/gacı4-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 9 */
+.row .card:nth-child(9) .image {
+    background: url(./img/gacı5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(9) .image:hover {
+    background: url(./img/gacı5-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 10 */
+.row .card:nth-child(10) .image {
+    background: url(./img/gacı6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(10) .image:hover {
+    background: url(./img/gacı6-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 11 */
+.row .card:nth-child(11) .image {
+    background: url(./img/gacı7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(11) .image:hover {
+    background: url(./img/gacı7-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card 12 */
+.row .card:nth-child(12) .image {
+    background: url(./img/gacı8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row .card:nth-child(12) .image:hover {
+    background: url(./img/gacı8-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* card finsh */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 320px;
+    border-top: 1px solid #ccc;
+    gap: 2rem;
+
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top .col h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-top .col ul li a {
+    color: #040303;
+}
+
+.footer-top .col ul li span {
+    margin-right: 10px;
+    display: inline-block;
+    transition: .5s;
+    font-size: 18px;
+}
+
+.footer-top .col ul li a:hover span {
+    color: red;
+    transform: translateX(10px);
+
+
+}
+
+.adres li {
+    margin-bottom: 10px;
+}
+
+.adres li i {
+    margin-right: 5px;
+}
+
+.sosyal {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.sosyal li i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.sosyal li i:hover {
+    color: red;
+    transition: .5s ease;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
